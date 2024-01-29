@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production',
   entry: './js/dashboard_main.js',
   performance: {
-   hints:false,
+    maxAssetSize: 1000000,
   },
   output: {
     filename: "bundle.js",
@@ -17,8 +17,17 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',
+        test: /\.(?:svg|gif|png|jpg|jpeg)$/i,
+        use: [
+          "file-loader",
+          {
+            loader: "image-webpack-loader",
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            }
+          }
+        ]
       },
     ]
   }
