@@ -3,6 +3,9 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: './js/dashboard_main.js',
+  performance: {
+   hints:false,
+  },
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, 'public')
@@ -10,7 +13,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
