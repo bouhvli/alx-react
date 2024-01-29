@@ -16,8 +16,6 @@ module.exports = {
   },
   performance: {
     maxAssetSize: 1000000,
-    hints: false,
-    maxEntrypointSize: 1000000,
   },
   plugins: [new CleanWebpackPlugin(), new HtmlWebpackPlugin()],
   optimization: {
@@ -26,8 +24,8 @@ module.exports = {
     },
   },
   devServer: {
-    contentBase: path.join(__dirname, './public'),
-    compress: true,
+    static: path.join(__dirname, './public'),
+    open: true,
     port: 8564,
   },
   module: {
@@ -40,14 +38,16 @@ module.exports = {
         test: /\.(ico|gif|png|jpg|jpeg|svg)$/i,
         type:'asset/resource',
         use: [
-          "file-loader",
           {
-            loader: "image-webpack-loader",
+          loader: "file-loader",
             options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
               bypassOnDebug: true,
               disable: true,
-            }
-          }
+            },
+          },
+          'image-webpack-loader',
         ]
       },
     ]
