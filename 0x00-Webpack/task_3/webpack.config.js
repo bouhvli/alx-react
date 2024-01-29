@@ -10,6 +10,10 @@ module.exports = {
     body: './modules/body/body.js',
     footer: './modules/footer/footer.js',
   },
+  output: {
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'public'),
+  },
   performance: {
     maxAssetSize: 1000000,
     hints: false,
@@ -18,17 +22,13 @@ module.exports = {
   plugins: [new CleanWebpackPlugin(), new HtmlWebpackPlugin()],
   optimization: {
     splitChunks: {
-      chuncks:'all',
+      chunks:'all',
     },
   },
   devServer: {
     contentBase: path.join(__dirname, './public'),
     compress: true,
     port: 8564,
-  },
-  output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [
