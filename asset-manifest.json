@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9c21004.css",
-    "main.js": "/static/js/main.d64c2ec6.js",
-    "static/js/787.1cd31a9e.chunk.js": "/static/js/787.1cd31a9e.chunk.js",
-    "static/media/logo.jpg": "/static/media/logo.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/index.html",
-    "main.e9c21004.css.map": "/static/css/main.e9c21004.css.map",
-    "main.d64c2ec6.js.map": "/static/js/main.d64c2ec6.js.map",
-    "787.1cd31a9e.chunk.js.map": "/static/js/787.1cd31a9e.chunk.js.map"
+    "main.css": "/bouhvli/alx-react-intro/static/css/main.e9c21004.css",
+    "main.js": "/bouhvli/alx-react-intro/static/js/main.d5832e5d.js",
+    "static/js/787.1cd31a9e.chunk.js": "/bouhvli/alx-react-intro/static/js/787.1cd31a9e.chunk.js",
+    "static/media/logo.jpg": "/bouhvli/alx-react-intro/static/media/logo.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/bouhvli/alx-react-intro/index.html",
+    "main.e9c21004.css.map": "/bouhvli/alx-react-intro/static/css/main.e9c21004.css.map",
+    "main.d5832e5d.js.map": "/bouhvli/alx-react-intro/static/js/main.d5832e5d.js.map",
+    "787.1cd31a9e.chunk.js.map": "/bouhvli/alx-react-intro/static/js/787.1cd31a9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9c21004.css",
-    "static/js/main.d64c2ec6.js"
+    "static/js/main.d5832e5d.js"
   ]
 }
