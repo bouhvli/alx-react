@@ -1,0 +1,30 @@
+
+.App{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.App-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25%;
+  border-bottom: 3px solid var(rgb(216, 3, 3));
+  color: var(rgb(216, 3, 3));
+}
+.App-logo{
+  height: 200px;
+}
+.App-body{
+  font-weight: bold;
+  height: 60%;
+  border-bottom: 3px solid var(rgb(216, 3, 3));
+}
+.App-body p {
+  margin: 2rem;
+}
+.App-footer{
+  text-align: center;
+  font-style: italic;
+}

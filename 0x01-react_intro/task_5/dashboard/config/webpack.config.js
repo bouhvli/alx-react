@@ -1,22 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  devtool: "inline-source-map",
+  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  optimization: {
-    splitChunks: {
-      chunks:'all',
-    },
-  },
-  performance: {
-    maxAssetSize: 1000000,
-  },
+  devtool: 'inline-source-map',
   devServer: {
-    static: path.join(__dirname, './dist'),
+    contentBase: path.join(__dirname, 'dist'),
     open: true,
     port: 8564,
   },
@@ -30,17 +23,25 @@ module.exports = {
         test: /\.(ico|gif|png|jpg|jpeg|svg)$/i,
         type:'asset/resource',
         use: [
+          "file-loader",
           {
-          loader: "file-loader",
+            loader: "image-webpack-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'images/',
               bypassOnDebug: true,
-              disable: true,
-            },
+              disable: true
+            }
           },
-          'image-webpack-loader',
         ]
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
       },
     ]
   }
