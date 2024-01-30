@@ -1,0 +1,7 @@
+:root{
+  --hol-color-tomato: rgb(216, 3, 3);
+}
+.Notifications{
+  border: 2px solid var(--hol-color-tomato);
+  padding: .3rem;
+}
