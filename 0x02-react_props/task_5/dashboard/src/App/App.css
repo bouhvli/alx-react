@@ -1,0 +1,12 @@
+.App{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-body{
+  font-weight: bold;
+  height: 60%;
+  border-bottom: 3px solid var(rgb(216, 3, 3));
+}

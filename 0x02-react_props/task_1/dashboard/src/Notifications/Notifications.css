@@ -1,0 +1,16 @@
+
+.Notifications{
+  border: 2px solid rgb(216, 3, 3);
+  padding: .3rem;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li[data-priority='default'] {
+    color: blue;
+  }
+  li[data-priority='urgent'] {
+    color: red;
+  }
+}

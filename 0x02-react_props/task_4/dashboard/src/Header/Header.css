@@ -1,0 +1,11 @@
+.App-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 25%;
+  border-bottom: 3px solid var(rgb(216, 3, 3));
+  color: var(rgb(216, 3, 3));
+}
+.App-logo{
+  height: 200px;
+}
