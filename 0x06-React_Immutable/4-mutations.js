@@ -1,6 +1,6 @@
 import { Map } from 'immutable';
 
-const map = Map({
+export const map = Map({
   1: 'Liam',
   2: 'Noah',
   3: 'Elijah',
@@ -8,5 +8,4 @@ const map = Map({
   5: 'Jacob',
   6: 'Lucas',
 });
-const map2 = map.set(2, 'Benjamin').set(4, 'Oliver');
-export { map, map2 };
+export const map2 = map.set(2, 'Benjamin').set(4, 'Oliver');
