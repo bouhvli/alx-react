@@ -8,7 +8,6 @@ export default function printBestStudents(grades) {
   Object.keys(students).map((key) => {
     std[key].firstName = format(std[key].firstName);
     std[key].lastName = format(std[key].lastName);
-    return std[key];
   });
   console.log(std);
 }
